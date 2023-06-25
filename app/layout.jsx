@@ -1,7 +1,7 @@
 import '@styles/global.css';
 import { Children } from 'react';
 import Navbar from '@components/navbar';
-
+import Footer from '@/components/footer';
 
 export const metadata = {
     title: "David Bushi",
@@ -13,15 +13,10 @@ const RootLayout = ({ children }) => {
     
     <html lang="en">
         <body className='w-screen'>
-                <div className="main">
-                    
-                </div>
-
                 <main className='w-full'>
-                    <Navbar>
+                    <Navbar />
                         { children }
-
-                    </Navbar>
+                    <Footer />
                 </main>
         </body>
     </html>

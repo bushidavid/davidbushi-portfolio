@@ -1,5 +1,45 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.project__tile {
+    @apply shadow-md shadow-slate-500 rounded-lg border-2 border-slate-100 w-64 h-96 mt-12 sm:px-5 sm:mx-5 hover:shadow-lg hover:shadow-slate-700;
+}
+
+.contact__input {
+    @apply my-2 rounded-lg shadow-md shadow-slate-200 border-slate-200 
+}
+
+h1 {
+    @apply text-2xl;
+}
+
+.h1__gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #6a3093, #a044ff);
+  }
 
 
+  body {
+    /* background: -webkit-linear-gradient(to right, #136a8a, #267871);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right,#136a8a , #267871); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #DEE2FF;
+  }
+  
+.navbar__links {
+    @apply hover:border-b-2 hover:border-teal-700  py-3 px-5 
+}
+
+.font__poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font__arvo {
+    font-family: 'Arvo', serif;
+    color: #8E9AAF
+}
