@@ -3,10 +3,11 @@ import Image from 'next/image';
 const Stack = () => {
     return (
 
-        <>
-            <h1 className='text-center mt-10 h1__gradient '>My Tech Stack</h1>
+        <section className='flex flex-col items-center w-screen h-48 snap-center stack'>
+            
+            <div><h1 className='text-center  h1__gradient '>My Tech Stack</h1></div>
 
-            <section className="flex justify-around items-center w-10/12 sm:flex-row sm:mt-10 flex-wrap bg-cyan-900 text-cyan-100">
+            <section className="flex justify-around text-center items-center w-7/12 sm:flex-row sm:mt-10 flex-wrap text-cyan-100">
 
                 <div>
                     <Image src='/assets/tailwind.svg' height={50} width={50} />
@@ -15,7 +16,7 @@ const Stack = () => {
                 </div>
                 <div>
                     <Image src='/assets/css.svg' height={50} width={50} />
-                    <p>Css3</p>
+                    <p>CSS3</p>
                 </div>
                 <div>
                     <Image src='/assets/react.svg' height={50} width={50} />
@@ -26,7 +27,7 @@ const Stack = () => {
                     <p>Next.js</p>
                 </div>
             </section>
-        </>
+        </section>
     )
 }
 

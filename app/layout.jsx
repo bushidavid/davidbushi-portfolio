@@ -13,7 +13,7 @@ const RootLayout = ({ children }) => {
     
     <html lang="en">
         <body className='w-screen'>
-                <main className='w-full'>
+                <main className='w-screen snap-y'>
                     <Navbar />
                         { children }
                     <Footer />
