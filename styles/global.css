@@ -6,7 +6,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 .project__tile {
-    @apply shadow-md shadow-slate-500 rounded-lg border-2 border-slate-100 w-64 h-96 mt-12 sm:px-5 sm:mx-5 hover:shadow-lg hover:shadow-slate-700;
+    @apply rounded-lg border-2 border-slate-100 w-64 h-96 mt-12 sm:px-5 sm:mx-5 hover:shadow-lg hover:shadow-red-500;
+
+    color: #FF8A71;
+    border-color: #FF8A71;
+    
 }
 
 .contact__input {
@@ -57,12 +61,14 @@ body {
 
 }
 
-.button__contact {
-    @apply mt-10 bg-green-500 rounded-lg px-6 py-4 hover:bg-green-600 hover:shadow-md hover:shadow-gray-500 text-white
+.button__work {
+    @apply mt-10 bg-green-500 rounded-lg px-6 py-4  hover:shadow-md hover:shadow-green-700 text-white
 }
 
-.button__work {
-    @apply mt-10 border border-gray-50 bg-gray-50 rounded-lg px-6 py-4 hover:shadow-md hover:shadow-gray-500 text-black
+.button__contact {
+    @apply mt-10 rounded-lg px-6 py-4 hover:shadow-md hover:shadow-red-500 text-white;
+
+    background-color: #FF8A71;
 }
 
 
@@ -78,3 +84,24 @@ body {
     font-family: 'Manrope', sans-serif;
     color: #81AFDD;
 }
+
+.text__stack {
+    color: #FF8A71;
+}
+
+.text__contact {
+    color: #FF8A71;
+}
+
+.fade-in-animation {
+    animation: fadeIn 2s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
